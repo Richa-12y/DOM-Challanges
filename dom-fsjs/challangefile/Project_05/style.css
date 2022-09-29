@@ -1,0 +1,67 @@
+body{
+     height: 100vh;
+     background-color:whitesmoke;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+}
+input{
+     outline: none;
+     width: 200px;
+     padding: 10px;
+     border-radius: 10px;
+
+}
+button{
+     padding: 10px;
+     background-color: azure;
+     border-radius: 10px;
+     cursor: pointer;
+     text-transform: capitalize;
+     width: 200px;
+
+}
+button:hover{
+     background-color:transparent;
+     color: black;
+}
+#palindrom{
+     padding: 2em;
+     color: black;
+     font-size: 2em;
+}
+
+@media (max-width:776px){
+     body{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          /* background-color: aqua; */
+          width: 100vw;
+          height:100vh;
+          
+     }
+     .Palindrome-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height:100%;
+          
+     }
+     h1{
+          font-size: 1.5em;
+     }
+     #palindrom{
+       font-size: 1em;
+       text-align: justify;
+     }
+     button{
+          margin-top: 0.8em;
+
+     }
+}

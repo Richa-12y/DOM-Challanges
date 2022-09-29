@@ -1,0 +1,16 @@
+body{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+button{
+     padding: 20px;
+     font-size: 16px;
+     border-radius: 25px;
+     background-color: #808080;
+     cursor: pointer;
+     text-transform: capitalize;
+     color: aliceblue;
+}

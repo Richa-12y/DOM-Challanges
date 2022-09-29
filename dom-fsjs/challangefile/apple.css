@@ -1,0 +1,50 @@
+*{
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     box-sizing: border-box;
+}
+body{
+background-image:url(https://media.istockphoto.com/photos/young-girl-dancing-to-the-music-picture-id685111998?b=1&k=20&m=685111998&s=612x612&w=0&h=oxkHp2byzCv1H-dKwGnUS8dutm9hFR8ifdYDwQ9Q29Y=);
+background-repeat: no-repeat;
+background-size:cover;
+object-fit: cover;
+width: 100vw;
+height: 100vh;
+}
+
+.apple-container>h1{
+ width: 100%;
+ text-align: center;
+ /* background-color: aqua; */
+ padding: 3rem;
+}
+footer{
+     display: flex;
+     flex-direction: row;
+     align-items:center;
+     background-color: white;
+     width: 100%;
+     height: 100px;
+     justify-content: space-around;
+     position: relative;
+     bottom: -21rem;
+     padding: 2rem;
+     cursor: pointer;
+}
+[alt="logo"]{
+     width: 30px;
+     height: 30px;
+     object-fit: cover;
+     border-radius: 20%;
+}
+p{
+     text-align: center;
+     font-size: 1rem;
+     font-family: 'Times New Roman', Times, serif;
+}
+p:hover{
+     text-decoration: underline;
+     color:rgb(17, 161, 218);
+     font-family:cursive;
+}

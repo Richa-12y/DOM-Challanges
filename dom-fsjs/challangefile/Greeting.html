@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class Work</title>
+     <style>
+        
+          .justforfun{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               width: 300px;
+               height: 300px;
+               background-color: black;
+               margin: auto;
+          }
+          h2{
+               text-align: center;
+               font-size: larger;
+               font-weight: 700;
+               color: aliceblue;
+               font-size: 4rem;
+          }
+          button{
+               border:none;
+               outline: none;
+               background-color: teal;
+               padding: 1em 0.8em 1em 0.8em;
+               border-radius: 10px;
+               color: aliceblue;
+               font-size: 0.8em;
+          }
+     </style>
+</head>
+<body>
+   
+     <div class="justforfun">
+      <h2>Greeting for day</h2>
+      <button onclick="handleclick()" id="btn">Click Me❤️</button>
+     </div>
+</body>
+<script>
+    
+     function handleclick() {
+          let todatDay=new Date();
+          let hourse=todatDay.getHours()
+          console.log(hourse)
+          if(hourse>=6 && hourse<12){
+          document.querySelector("#btn").innerHTML='Good Morning 🤗'
+          }
+          else if(hourse>12 && hourse<16){
+               document.querySelector("#btn").innerHTML='Good Afternoon 🤗'
+
+          }
+          else if(hourse>=16 && hourse<19){
+               document.querySelector("#btn").innerHTML='Good Evening 🤗'
+
+          }
+          else{
+               document.querySelector("#btn").innerHTML='Good night 🤗'
+
+          }
+
+     }
+     
+</script>
+</html>

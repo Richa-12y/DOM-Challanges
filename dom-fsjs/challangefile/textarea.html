@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Count Word App</title>
+</head>
+
+<body>
+     <div class="textarea-container">
+          <div class="textarea-container-desc">Tweet Something:
+               <span id="count-words"> </span><br>
+               <textarea placeholder="Enter text here..." name="textbox" id="textbox" class="textbox-area" rows="3" value="Tweet"
+                    cols="60" onkeydown="countWords(15,this)"></textarea>
+          </div>
+          <button class="btn-one" onclick="clearValue()">Click to clear</button>
+     </div>
+     <script>
+          var countWords = function (maxlength, input) {
+               var totalwords = input.value.length;
+               // console.log(totalwords)
+               var remaining = (maxlength - totalwords);
+               // console.log(remaining)
+               var displayWords = document.getElementById('count-words');
+               console.log(displayWords)
+
+               if (remaining >0) {
+                    displayWords.innerHTML = "Remaining characters: " + remaining;
+                    displayWords.style.color = "green";
+                    input.style.borderColor = "green";
+               }
+          //      else if(remaining <= 8) {
+          //      displayWords.innerHTML = maxlength+' character limit, ' + remaining  + ' remaining.';
+          //      displayWords.style.color = "red";
+          //      input.style.borderColor = "orange";
+
+          //   } 
+               else {
+                    displayWords.innerHTML = "Maximum " + maxlength + " characters are allowed";
+                    displayWords.innerHTML = "Remaining character: 0";
+                    displayWords.style.color = "red";
+                    input.style.borderColor = "red";
+               }
+          }
+          function clearValue() {
+       document.getElementById('textbox').value = '';
+}
+
+     </script>
+</body>
+
+</html>

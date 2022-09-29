@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Traget Input file</title>
+</head>
+<body>
+  <h1>Enter your Name:</h1>
+  <input type="text" id="input" name="name"/>
+  <p id="displayentertexthere">0</p>
+
+  <script>
+     document.addEventListener('input',display);
+     function display() {
+          var getdatainsideinputfiled=document.getElementById("input").value
+          console.log(getdatainsideinputfiled)
+          document.getElementById('displayentertexthere').innerHTML="You are writing " + getdatainsideinputfiled.toUpperCase()
+     }
+  </script>
+</body>
+</html>

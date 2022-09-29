@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Play with Button</title>
+</head>
+
+<body>
+
+     <div class="button-class">
+          <h1>Doing things only We Learn</h1>
+          <button onclick="changecolor()" id="btn">Click me</button>
+          <button ondblclick="dubleclick()" id="btn-one">Welcome!!</button>
+     </div>
+      <div>
+          <h3>My Name is Richa Singh</h3>
+          <p id="dispaly-text"></p>
+      </div>
+     <script>
+          function changecolor() {           
+               document.querySelector('#btn').style.backgroundColor="red"
+               document.querySelector('#btn').style.padding='1em'
+               document.querySelector('#btn').innerHTML='You are beautiful'
+          }
+
+          function dubleclick() {
+               document.querySelector('#btn-one').style.backgroundColor="teal"
+               document.querySelector('#btn-one').style.padding='2em'
+               document.querySelector('#btn-one').innerHTML='How you doing'
+          }
+          document.addEventListener('click',mouseClick);
+          function mouseClick() {
+               document.querySelector('#dispaly-text').innerHTML='I am a Senior Engneer in CSS CORP'
+          }
+     </script>
+</body>
+</html>
